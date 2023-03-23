@@ -272,7 +272,8 @@ vec3 newtonFractal(vec2 start, float[6] coeffs )
     float distSq = complexMagnitudeSq(point - pointPrev);
 
     if ( distSq < CUTOFF ) {
-      fac = ( float(i) + pow( distSq / CUTOFF , 2.0) ) / float(MAX_ITERATIONS);
+      fac = float(i) / float(MAX_ITERATIONS);
+      fac = pow(fac, 1.2);
       break;
     }
   }
