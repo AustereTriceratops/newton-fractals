@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/newton-fractals/static/css/main.00b83027.css",
+    "main.css": "/newton-fractals/static/css/main.f3d14956.css",
     "main.js": "/newton-fractals/static/js/main.572b6899.js",
     "index.html": "/newton-fractals/index.html",
-    "main.00b83027.css.map": "/newton-fractals/static/css/main.00b83027.css.map",
+    "main.f3d14956.css.map": "/newton-fractals/static/css/main.f3d14956.css.map",
     "main.572b6899.js.map": "/newton-fractals/static/js/main.572b6899.js.map"
   },
   "entrypoints": [
-    "static/css/main.00b83027.css",
+    "static/css/main.f3d14956.css",
     "static/js/main.572b6899.js"
   ]
 }
