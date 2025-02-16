@@ -10,6 +10,7 @@ class NewtonFractal extends Component {
     params: [1, -1, 0, 1, 0, 1],
     color_scheme: 2,
     controls_hidden: false,
+    githubIconHighlight: false
   };
 
   instance: Main;
@@ -47,6 +48,24 @@ class NewtonFractal extends Component {
   render() {
     return (
       <>
+        <a href="https://github.com/AustereTriceratops/newton-fractals">
+          <div
+            style={{
+              position: 'absolute',
+              bottom: 0,
+              backgroundColor: 'white',
+              margin: '1rem',
+              padding: '0.2rem',
+              borderRadius: '0.5rem', 
+              opacity: this.state.githubIconHighlight ? '100%' : '80%',
+              boxShadow: '0px 0px 10px 2px rgba(0.1, 0.05, 0.05, 0.8)'
+            }}
+            onMouseOver={() => this.setState({githubIconHighlight: true})}
+            onMouseLeave={() => this.setState({githubIconHighlight: false})}
+          >
+            <img src={require('./githubicon.svg').default} width={32} height={32}/>
+          </div>
+        </a>
         <Controls
           params={this.state.params}
           setParams={this.setParams.bind(this)}
